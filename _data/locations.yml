@@ -1,0 +1,26 @@
+- name: MC's Apartment
+  link: mc-apartment
+
+- name: Subway Station
+  link: subway
+
+- name: Mark's Apartment
+  link: mark-apartment
+
+- name: Parents' House
+  link: parents-house
+
+- name: Applewood
+  link: applewood
+
+- name: Applewood Hospital
+  link: applewood-hospital
+
+- name: Applewood Elementary
+  link: applewood-elementary
+
+- name: Zoo
+  link: zoo
+
+- name: Smol Bean Cafe
+  link: smolbean

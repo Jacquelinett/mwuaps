@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<html>
+  <head>
+    <title>MWUAPS {{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/wiki.css">
+  </head>
+  <body>
+    <div class="wiki">
+        {% include sidebar.html %}
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+  </body>
+</html>
