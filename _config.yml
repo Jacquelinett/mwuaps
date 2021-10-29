@@ -1,0 +1,15 @@
+
+# Site settings
+title: My Wish Upon A Parallel Star
+email: jacqueline@ordrstudio.com
+description: > # this means to ignore newlines until "baseurl:"
+  The website for MWUAPS Video Game
+baseurl: "/mwuaps" # the subpath of your site, e.g. /blog
+url: "http://ordrstudio.com/" # the base hostname & protocol for your site
+
+github_username:  Jacquelinett
+
+timezone: America/New_York
+
+# Build settings
+markdown: kramdown

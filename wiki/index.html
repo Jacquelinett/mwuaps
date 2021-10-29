@@ -30,7 +30,7 @@ title: MWUAPS - Wiki Home
                     <h3>Story</h3>
                     <ul>
                         {% for chapter in site.data.story %}
-                            <li><a href="/wiki/story/{{ chapter.link }}"> {{ chapter.name }}</a></li>
+                            <li><a href="{{ "/wiki/story/" | append: chapter.link | prepend: site.baseurl }}"> {{ chapter.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -38,7 +38,7 @@ title: MWUAPS - Wiki Home
                     <h3>Characters</h3>
                     <ul>
                         {% for character in site.data.characters %}
-                            <li><a href="/wiki/characters/{{ character.name }}"> {{ character.name }}</a></li>
+                            <li><a href="{{ "/wiki/characters/" | append: character.name | downcase | prepend: site.baseurl }}"> {{ character.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -46,7 +46,7 @@ title: MWUAPS - Wiki Home
                     <h3>Locations</h3>
                     <ul>
                         {% for location in site.data.locations %}
-                            <li><a href="/wiki/locations/{{ location.link }}"> {{ location.name }}</a></li>
+                            <li><a href="{{ "/wiki/locations/" | append: location.link | prepend: site.baseurl }}"> {{ location.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -59,7 +59,7 @@ title: MWUAPS - Wiki Home
                 <ul>
                     {% for post in site.posts %}
                       <li>
-                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
                             <div class="content-text">
                                 {{ post.content | strip_html | truncatewords:150 }}
                             </div>

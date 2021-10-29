@@ -1,5 +1,5 @@
 <div>
-    <a href="/wiki">Home</a> > <a href="/wiki/{{ page.type }}">{{ page.layout | capitalize }}</a> > {{ page.designation }}
+    <a href="/wiki">Home</a> > <a href="{{ "/wiki" | append: page.type | prepend: site.baseurl}}">{{ page.layout | capitalize }}</a> > {{ page.designation }}
     <br>___________________________________________________
     <h2>{{ page.designation }} {% if page.title %} - {{ page.title }} {% endif %}</h2>
 </div>
