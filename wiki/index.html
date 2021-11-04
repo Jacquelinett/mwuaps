@@ -10,12 +10,12 @@ title: MWUAPS - Wiki Home
   </head>
   <body>
     <h1>Insert MWUAPS Logo here</h1>
-    <h3>Welcome to the official My Wish Upon A Parallel Star Wiki</h3>
-    <h3>Last Updated: 10/29/21</h3>
+    <h5>Welcome to the official My Wish Upon A Parallel Star Wiki</h5>
+    <h5>Last Updated: 10/29/21</h5>
     <div class="content-body">
         <div class="content-left">
             <div class="about-mwuaps">
-                <h3>About My Wish Upon A Parallel Star</h3>
+                <h5>About My Wish Upon A Parallel Star</h5>
                 <div class="content-text">
                     My Wish Upon A Parallel Star (MWUAPS) is a story-driven game heavily inspired by To The Moon in term of gameplay.
                     <p>The plot is about a girl see a shooting star and made a wish that she could see how different her life could 
@@ -27,36 +27,36 @@ title: MWUAPS - Wiki Home
             </div>
             <div class="category-box">
                 <div class="category">
-                    <h3>Story</h3>
-                    <ul>
+                    <h5>Story</h5>
+                    <ul class='nav-ul'>
                         {% for chapter in site.data.story %}
                             <li><a href="{{ "/wiki/story/" | append: chapter.link | prepend: site.baseurl }}"> {{ chapter.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="category">
-                    <h3>Characters</h3>
-                    <ul>
+                    <h5>Characters</h5>
+                    <ul class='nav-ul'>
                         {% for character in site.data.characters %}
                             <li><a href="{{ "/wiki/characters/" | append: character.name | downcase | prepend: site.baseurl }}"> {{ character.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="category">
-                    <h3>Locations</h3>
-                    <ul>
+                    <h5>Locations</h5>
+                    <ul class='nav-ul'>
                         {% for location in site.data.locations %}
                             <li><a href="{{ "/wiki/locations/" | append: location.link | prepend: site.baseurl }}"> {{ location.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="category">
-                    <h3>Gameplay</h3>
+                    <h5>Gameplay</h5>
                 </div>
             </div>
             <div class="extra-content">
-                <h3>Development Blog</h3>
-                <ul>
+                <h5>Development Blog</h5>
+                <ul class='nav-ul'>
                     {% for post in site.posts %}
                       <li>
                             <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
@@ -69,7 +69,7 @@ title: MWUAPS - Wiki Home
             </div>
         </div>
         <div class="content-right">
-            <h3>Twitter Feeds</h3>
+            <h5>Twitter Feeds</h5>
             <div class="twitter">
                 <a class="twitter-timeline" href="https://twitter.com/mwuaps_game?ref_src=twsrc%5Etfw">Tweets by mwuaps_game</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>

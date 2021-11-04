@@ -9,7 +9,7 @@ title: MWUAPS - Wiki Story
     <title>{{ page.title }}</title>
   </head>
   <body>
-        <h3>Story</h3>
+        <h5>Story</h5>
         <ul>
             {% for chapter in site.data.story %}
                 <li><a href="{{ "/wiki/story/" | append: chapter.link | prepend: site.baseurl }}"> {{ chapter.name }}</a></li>
